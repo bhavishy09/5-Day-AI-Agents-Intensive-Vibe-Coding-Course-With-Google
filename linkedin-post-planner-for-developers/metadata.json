@@ -1,0 +1,6 @@
+{
+  "name": "LinkedIn Post Planner for Developers",
+  "description": "Authentic, human-sounding LinkedIn posts strategist specifically designed to help builders and developers share their work with credibility and impact.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
