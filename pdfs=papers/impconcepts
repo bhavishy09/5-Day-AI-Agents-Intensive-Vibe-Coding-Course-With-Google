@@ -1,0 +1,1061 @@
+1. What is Google Developer Knowledge?
+
+Normally, an AI model learns from data that may be months or years old.
+
+Example:
+
+You ask:
+
+"How do I use the latest Gemini API?"
+
+The AI might answer using old information and make mistakes.
+
+Google Developer Knowledge solves this problem.
+
+It is a special service that contains Google's latest developer documentation and allows AI tools to read it directly.
+
+Without Developer Knowledge
+AI → Uses old training data
+
+Possible result:
+
+❌ Wrong API name
+❌ Old code examples
+❌ Hallucinated information
+
+With Developer Knowledge
+AI → Developer Knowledge → Latest Google Docs
+
+Result:
+
+✅ Latest documentation
+✅ Correct code examples
+✅ Fewer hallucinations
+
+2. What is an API?
+
+API = Application Programming Interface
+
+Think of it like a waiter in a restaurant.
+
+Example
+
+You want food.
+
+Instead of going into the kitchen yourself:
+
+You → Waiter → Kitchen
+
+The waiter is the API.
+
+Similarly:
+
+Your AI → API → Google Documentation
+
+The API fetches the information.
+
+3. What is MCP?
+
+MCP = Model Context Protocol
+
+It is a standard way for AI models to use external tools.
+
+Think of MCP as a USB port for AI.
+
+Example
+
+Your laptop can connect to:
+
+Mouse
+Keyboard
+Pen Drive
+
+using USB.
+
+Similarly AI can connect to:
+
+Google Docs
+Databases
+GitHub
+Gmail
+
+using MCP.
+
+AI
+ │
+ ├── MCP → Google Docs
+ ├── MCP → Gmail
+ ├── MCP → Calendar
+ └── MCP → Database
+4. What is Antigravity?
+
+Antigravity is an AI assistant platform.
+
+You can think of it as similar to:
+
+ChatGPT Desktop
+Claude Desktop
+Cursor
+
+but designed to work with MCP servers and AI tools.
+
+5. What are we doing in this codelab?
+
+The goal is:
+
+Step 1
+
+Create a Google Cloud project.
+
+Step 2
+
+Enable Developer Knowledge API.
+
+Step 3
+
+Connect Antigravity to that API using MCP.
+
+Step 4
+
+Ask questions and get answers from live Google documentation.
+
+6. Why do we need Google Cloud?
+
+Google Cloud provides access to Google services.
+
+Think of it as creating an account that allows your applications to use Google's APIs.
+
+Example
+
+You create:
+
+Project Name:
+My-AI-Agent
+
+Then enable:
+
+Developer Knowledge API
+
+Now your AI can access it.
+
+7. Step-by-Step Flow
+Step 1: Create Google Cloud Project
+
+Go to Google Cloud Console.
+
+Create a project.
+
+Example:
+
+Project Name:
+AI-Assistant
+
+Result:
+
+✅ Project created
+
+Step 2: Enable Developer Knowledge API
+
+Inside the project:
+
+APIs & Services
+      ↓
+Library
+      ↓
+Developer Knowledge API
+      ↓
+Enable
+
+Result:
+
+✅ API becomes available
+
+Step 3: Install Antigravity
+
+Install Antigravity on your computer.
+
+Possible options:
+
+Antigravity Desktop
+Antigravity IDE
+Antigravity CLI
+
+CLI means Command Line Interface.
+
+Example:
+
+Instead of clicking buttons:
+
+antigravity
+
+you type commands in terminal.
+
+Step 4: Configure MCP
+
+Now tell Antigravity:
+
+"Use Google Developer Knowledge as a tool."
+
+Configuration looks conceptually like:
+
+Antigravity
+    ↓
+Developer Knowledge MCP
+    ↓
+Google Documentation
+
+After configuration:
+
+Antigravity can query Google Docs directly.
+8. What Happens After Setup?
+
+Suppose you ask:
+
+How do I authenticate with Gemini API?
+Before MCP
+
+AI guesses.
+
+Maybe use this method...
+
+Could be wrong.
+
+After MCP
+
+AI checks Google documentation first.
+
+Question
+    ↓
+Developer Knowledge
+    ↓
+Latest Documentation
+    ↓
+Answer
+
+Much more reliable.
+
+9. Example Prompt 1
+
+Ask:
+
+Show me the latest Gemini API quickstart.
+
+Process:
+
+Antigravity
+      ↓
+Developer Knowledge
+      ↓
+Gemini Docs
+      ↓
+Returns latest guide
+10. Example Prompt 2
+
+Ask:
+
+How do I deploy a Cloud Run application?
+
+Process:
+
+Antigravity
+      ↓
+Developer Knowledge
+      ↓
+Cloud Run Documentation
+      ↓
+Step-by-step answer
+11. Example Prompt 3
+
+Ask:
+
+What is the newest Firebase Authentication method?
+
+The AI will retrieve information directly from Firebase docs instead of relying on memory.
+
+12. Why is this Better Than Web Scraping?
+
+Web scraping means:
+
+Read website HTML
+Extract text
+
+Problems:
+
+❌ Pages change
+❌ HTML changes
+❌ Can break easily
+
+Developer Knowledge provides:
+
+Official Documentation
+        +
+Structured Access
+        +
+Always Updated
+
+Advantages:
+
+✅ Reliable
+✅ Official source
+✅ Easier for AI
+
+13. What Does "No Code Required" Mean?
+
+Usually connecting an AI to a tool requires programming.
+
+Example:
+
+client.connect()
+client.authenticate()
+client.query()
+
+This codelab avoids that.
+
+You only:
+
+Enable API
+Configure Antigravity
+Start asking questions
+
+No programming needed.
+
+14. What are MCP Servers?
+
+An MCP Server is a service that exposes tools to AI.
+
+Examples:
+
+MCP Server	Gives Access To
+Developer Knowledge MCP	Google Docs
+Gmail MCP	Emails
+Calendar MCP	Events
+Drive MCP	Files
+
+Think of MCP servers as plugins for AI.
+
+AI
+ │
+ ├── Gmail MCP
+ ├── Calendar MCP
+ ├── Drive MCP
+ └── Developer Knowledge MCP
+15. Real-World Analogy
+
+Imagine Antigravity is a student.
+
+Without MCP:
+
+Student answers from memory.
+
+Sometimes wrong.
+
+With MCP:
+
+Student opens latest textbook
+and then answers.
+
+Much more accurate.
+
+Final Summary
+
+The entire process is:
+
+1. Create Google Cloud Project
+                ↓
+2. Enable Developer Knowledge API
+                ↓
+3. Install Antigravity
+                ↓
+4. Connect Developer Knowledge MCP
+                ↓
+5. Ask coding/documentation questions
+                ↓
+6. Antigravity reads official Google docs
+                ↓
+7. You get accurate, up-to-date answers
+
+1. Universal Commerce Protocol (UCP)
+What is it?
+
+UCP is a common language for shopping.
+
+Think of it as Google Translate for online stores.
+
+Example Without UCP
+
+Store A shows products like:
+
+{
+  "item_name": "Black T-Shirt",
+  "cost": 799
+}
+
+Store B shows:
+
+{
+  "product": "Black Tee",
+  "price": 750
+}
+
+An AI agent must learn both formats.
+
+This becomes messy.
+
+Example With UCP
+
+UCP converts everything into one standard format:
+
+{
+  "name": "Black T-Shirt",
+  "price": 799,
+  "size": "M"
+}
+
+Now every store looks the same to the AI.
+
+Real-Life Analogy
+
+Suppose:
+
+One person speaks Hindi
+One speaks English
+One speaks French
+
+A translator sits between them.
+
+Person A
+     ↓
+ Translator
+     ↓
+Person B
+
+UCP is that translator.
+
+What UCP Does
+
+When the AI says:
+
+"Find black T-shirts under ₹1000"
+
+UCP helps it:
+
+✅ Read merchant catalogs
+✅ Compare products
+✅ Add items to cart
+✅ Build orders
+
+2. Agent Payments Protocol (AP2)
+What is it?
+
+AP2 is the payment system for AI agents.
+
+Think of it as a secure digital wallet.
+
+Problem Without AP2
+
+Imagine giving your AI access to your credit card.
+
+You ask:
+
+"Buy a ₹500 T-shirt."
+
+But the AI accidentally buys:
+
+₹50,000 laptop
+
+Not good!
+
+AP2 Prevents This
+
+Before the AI spends money, AP2 checks rules.
+
+Example rules:
+
+Maximum spending: ₹1000
+
+Allowed categories:
+✓ Clothing
+✓ Books
+
+Blocked categories:
+✗ Electronics
+✗ Jewelry
+
+The AI cannot break these rules.
+
+Real-Life Analogy
+
+Suppose parents give a child:
+
+Pocket money = ₹500
+
+Rules:
+
+Can buy:
+✓ Snacks
+✓ School supplies
+
+Cannot buy:
+✗ Video games
+✗ Expensive gadgets
+
+The child can spend only within limits.
+
+AP2 works similarly for AI agents.
+
+What is an Encrypted Handshake?
+
+The paragraph mentions:
+
+encrypted handshakes
+
+This means both sides verify each other securely.
+
+Example:
+
+AI Agent  ←→ Payment System
+
+They exchange secret encrypted information.
+
+This confirms:
+
+✅ Agent is genuine
+✅ Merchant is genuine
+✅ Payment request is authentic
+
+Simple Analogy
+
+Like entering an OTP while making a payment.
+
+You enter OTP
+      ↓
+Bank verifies you
+      ↓
+Payment approved
+
+The handshake is a machine-to-machine version of that.
+
+What are User Guardrails?
+
+Guardrails are spending rules set by the user.
+
+Example:
+
+Daily limit: ₹2000
+
+Only buy:
+- Groceries
+- Medicines
+
+Ask permission for:
+- Purchases above ₹500
+
+The AI must obey these rules.
+
+Complete Flow Example
+
+Suppose you tell your AI:
+
+"Order a black T-shirt under ₹1000."
+
+Step 1: Search Products
+AI
+ ↓
+UCP
+ ↓
+Amazon, Flipkart, Myntra
+
+UCP translates all store catalogs into one format.
+
+Step 2: Build Order
+
+AI finds:
+
+Black T-Shirt
+Price: ₹799
+Size: M
+
+Creates order.
+
+Step 3: Check Payment Rules
+
+AP2 checks:
+
+Budget limit = ₹1000
+
+Order cost:
+
+₹799
+
+Allowed.
+
+Step 4: Secure Payment
+AI
+ ↓
+Encrypted Handshake
+ ↓
+Payment Provider
+
+Identity verified.
+
+Step 5: Complete Purchase
+Payment Approved
+ ↓
+Order Placed
+How UCP and AP2 Work Together
+User:
+"Buy me a black T-shirt under ₹1000"
+            │
+            ▼
+          UCP
+(understands store catalogs)
+            │
+            ▼
+      Creates Order
+            │
+            ▼
+          AP2
+(checks spending rules)
+            │
+            ▼
+ Secure Payment & Checkout
+            │
+            ▼
+       Order Confirmed
+One-Line Summary
+UCP = The shopping language that lets AI agents understand products and create orders across different merchants.
+AP2 = The secure payment system that lets AI agents spend money safely using encryption and user-defined spending limits.
+
+Together, they enable autonomous AI shopping, where an AI can find products, create orders, and pay for them while staying within the user's approved rules.
+
+
+skills
+
+What is a Skill in Antigravity?
+
+A Skill is a reusable capability that an AI agent can load only when needed.
+
+Think of it like an app on your phone.
+
+You don't keep the Calculator app open all the time.
+You open it only when you need to calculate something.
+
+Similarly, Antigravity loads a Skill only when the user's request requires it.
+
+Simple Definition
+
+A Skill is:
+
+A folder
+Contains a file called SKILL.md
+May also contain:
+Python scripts
+Bash scripts
+Templates
+Reference files
+
+Example:
+
+weather-skill/
+│
+├── SKILL.md
+├── weather.py
+├── cities.json
+└── template.md
+What is SKILL.md?
+
+This is the instruction file.
+
+It tells the AI:
+
+When to use the skill
+What the skill does
+Which scripts to execute
+Expected output
+
+Example:
+
+Name: Weather Skill
+
+Purpose:
+Get current weather.
+
+Use when:
+User asks about weather.
+
+Steps:
+1. Call weather.py
+2. Format output
+
+Think of SKILL.md as the instruction manual for the skill.
+
+Why not put everything in the System Prompt?
+System Prompt
+
+Loaded every time.
+
+Start AI
+     ↓
+Load everything
+
+Even if the user asks:
+
+"Tell me a joke."
+
+the AI still loads weather instructions, Git instructions, database instructions, etc.
+
+This wastes context.
+
+Skills
+
+Loaded only when needed.
+
+Example:
+
+User:
+
+"Generate database migration."
+
+AI loads:
+
+Database Skill
+
+User:
+
+"Summarize this PDF."
+
+AI loads:
+
+PDF Skill
+
+Much more efficient.
+
+Real-Life Analogy
+
+Imagine a hospital.
+
+Doctors don't carry every medical book all day.
+
+Instead:
+
+Patient:
+
+"Heart pain"
+
+Doctor opens:
+
+❤️ Cardiology book
+
+Patient:
+
+"Skin allergy"
+
+Doctor opens:
+
+🩺 Dermatology book
+
+Same doctor.
+
+Different knowledge loaded.
+
+Skills work exactly like this.
+
+What does "On-Demand" mean?
+
+Suppose your project has:
+
+30 Skills
+
+Examples:
+
+Docker Skill
+Git Skill
+Database Skill
+React Skill
+Python Skill
+AWS Skill
+Firebase Skill
+
+If all 30 loaded every time:
+
+❌ Huge context
+
+❌ Slower reasoning
+
+❌ Higher token usage
+
+Instead:
+
+User:
+
+"Deploy my app."
+
+AI loads only:
+
+Docker Skill
+AWS Skill
+Git Skill
+
+Everything else stays unloaded.
+
+Capability Extension
+
+Skills don't only explain things.
+
+They can perform actions.
+
+Example:
+
+User:
+
+"Generate changelog."
+
+Instead of writing one manually,
+
+AI executes:
+
+git log
+
+Collects commits.
+
+Creates:
+
+Version 2.0
+
+Added login
+
+Fixed bug
+
+Improved UI
+
+The Skill performed real work.
+
+Example 1
+
+User:
+
+"Create a Python virtual environment."
+
+Skill executes:
+
+python -m venv venv
+
+No manual typing.
+
+Example 2
+
+User:
+
+"Convert all PNG images to JPG."
+
+Skill executes Python:
+
+convert_images.py
+
+Automatically.
+
+Skills vs MCP
+
+This is a favorite interview question.
+
+MCP
+
+Think:
+
+MCP = Tools
+
+It connects AI to external systems.
+
+Example:
+
+GitHub
+PostgreSQL
+Gmail
+Google Drive
+Slack
+
+MCP gives access.
+
+Skill
+
+Skill decides:
+
+Which tool to use
+How to use it
+In what order
+
+Example:
+
+User:
+
+"Create GitHub release."
+
+Skill:
+
+Step 1
+
+Read commits
+
+↓
+
+Step 2
+
+Generate release notes
+
+↓
+
+Step 3
+
+Call GitHub MCP
+
+↓
+
+Publish release
+
+MCP performs the action.
+
+Skill decides the process.
+
+Simple Analogy
+
+Think of building a house.
+
+MCP
+
+The worker.
+
+Hammer
+
+Saw
+
+Drill
+Skill
+
+The engineer.
+
+Says:
+
+Use hammer first
+
+↓
+
+Now use drill
+
+↓
+
+Now paint wall
+
+The worker does the work.
+
+The engineer plans it.
+
+Skills + MCP Together
+User
+
+↓
+
+Skill
+
+↓
+
+GitHub MCP
+
+↓
+
+GitHub Repository
+What are Rules?
+
+Rules are always active.
+
+Example:
+
+Never delete production database.
+
+Every task follows this.
+
+Example
+
+Rule:
+
+Always run tests before commit.
+
+Even if Skill forgets,
+
+Rule forces:
+
+Run Tests
+
+↓
+
+Then Commit
+What are Workflows?
+
+Workflow = Multiple Skills together.
+
+Example:
+
+Deploy Website
+
+Workflow:
+
+Build Skill
+
+↓
+
+Test Skill
+
+↓
+
+Docker Skill
+
+↓
+
+Deploy Skill
+
+Several Skills cooperate.
+
+Complete Architecture
+User
+
+↓
+
+Workflow
+
+↓
+
+Skills
+
+↓
+
+MCP Servers
+
+↓
+
+External Systems
+Real Example
+
+User:
+
+"Deploy my Flask project."
+
+Workflow:
+
+Build Skill
+
+↓
+
+Testing Skill
+
+↓
+
+Docker Skill
+
+↓
+
+GitHub Skill
+
+↓
+
+AWS Skill
+
+Each Skill loads only while needed.
