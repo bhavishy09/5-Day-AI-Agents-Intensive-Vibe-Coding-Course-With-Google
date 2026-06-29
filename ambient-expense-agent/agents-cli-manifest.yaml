@@ -1,9 +1,10 @@
-name: "weather-assistant"
+name: "ambient-expense-agent"
 acli_version: "0.5.0"
-agent_directory: "app"
+agent_directory: "expense_agent"
+
 region: "us-east1"
 base_template: "adk"
-generated_at: "2026-06-22T19:06:09.702571+00:00"
+generated_at: "2026-06-23T20:00:26.441600+00:00"
 language: "python"
 create_params:
   deployment_target: "none"

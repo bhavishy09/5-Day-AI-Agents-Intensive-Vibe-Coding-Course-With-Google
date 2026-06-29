@@ -1,5 +1,5 @@
 [project]
-name = "weather-assistant"
+name = "ambient-expense-agent"
 version = "0.1.0"
 description = ""
 authors = [
@@ -93,6 +93,7 @@ pythonpath = "."
 asyncio_default_fixture_loop_scope = "function"
 
 [tool.hatch.build.targets.wheel]
-packages = ["app","frontend"]
+packages = ["expense_agent","frontend"]
+
 
 

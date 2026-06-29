@@ -1,4 +1,4 @@
-# weather-assistant
+# ambient-expense-agent
 
 Simple ReAct agent
 Agent generated with `agents-cli` version `0.5.0`
@@ -6,7 +6,7 @@ Agent generated with `agents-cli` version `0.5.0`
 ## Project Structure
 
 ```
-weather-assistant/
+ambient-expense-agent/
 ├── app/         # Core agent code
 │   ├── agent.py               # Main agent logic
 │   └── app_utils/             # App utilities and helpers
